@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@font-face{
+    src: url(/assets/font/mandalore.ttf);    
+    font-family: mandalore;
+}
+
+@font-face{
+    src: url(/assets/font/waltograph42.otf);
+    font-family: waltDisney;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* ----------------------           Basic staff UP           ---------------- */ 
+
+/*-------------------------------------- background loop mp4 -------------------------------------- */
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.5);
+}
+
+.video-container video{
+    position: absolute;
+    background-position: center;
+    top: 50%;   
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;
+    min-width: 436vw;
+    min-height: 100vh;
+    transform: translate(-50%, -50%);
+}
+/*-------------------------------------- background loop mp4 -------------------------------------- */
+body{
+    font-family: Lato, sans-serif;
+    color: #555555;    
+}    
+
+#head{
+    height: 80px;
+    width: 100%;
+}
+
+/* ----------------------           Main title           animation           ---------------- */ 
+h2{
+    font-family: mandalore, sans-serif;
+    letter-spacing: 1px;    
+    color: #555555;
+}
+
+p{
+    font-family: Lato;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+#logo{
+    float: left;
+    font-size: 350%;
+    margin-left: 22px;
+    margin-top: -23px;
+}
+
+#the{
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    max-width: 100%;    
+    position: relative;    
+    text-align: center;
+    margin-bottom: -48px;
+    font-size: 20%;
+}
+
+#the, #logo{
+    animation-name: the;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    color: rgba(0,0,0,0);
+} 
+@keyframes the{
+  0%   {left:0px; top:0px; color: rgba(0,0,0,0)}
+  100%  {left:0px; top:0px; color: #555555;}
+}
+
+/* ----------------------           befor-after animation           ---------------- */
+#the:before{
+    content: "";
+    display: block;
+    width: 45%;
+    height: 2%;
+    background: #555555;
+    position: absolute;
+    left: 0px;
+    top: 53.5%;
+}
+
+#the:after{
+    content: "";
+    display: block;
+    width: 45%;
+    height: 2%;
+    background: #555555;
+    position: absolute;
+    right: 0px;
+    top: 53.5%;
+}
+
+#the:before, #the:after{
+    animation-name: bf;
+    animation-duration: 1.5s;
+    animation-delay: -.3s;
+    animation-fill-mode: backwards;
+    color: rgba(0, 0, 0, 0);
+    
+} 
+@keyframes bf{
+    100%  {left:0px; top:0px; color: rgba(0, 0, 0, 1)}
+    0%  {left:0px; top:0px; color: rgb(0, 0, 0, 1)}
+}
+/* ----------------------           befor-after animation           ---------------- */
+/* ----------------------           Main title           animation           ---------------- */ 
+
+/* ----------------------           home/gallery/sign in buttons           ---------------- */
+#menu #hh{
+    animation-name: hh;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    color: rgba(0,0,0,0);
+} 
+@keyframes hh{
+  0%   {left:0px; top:0px; color: rgba(0,0,0,0)}
+  100%  {left:0px; top:0px; color: #555555;}
+}
+
+#menu #hg{
+    animation-name: hg;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    color: rgba(0,0,0,0);
+}
+@keyframes hg{
+  0%   {left:0px; top:0px; color: rgba(0,0,0,0)}
+  100%  {left:0px; top:0px; color: #555555}
+}
+
+#menu #hs{
+    animation-name: hs;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    color: rgba(0,0,0,0);
+}
+@keyframes hs{
+  0%   {left:0px; top:0px; color: rgba(0,0,0,0)}
+  100%  {left:0px; top:0px; color: #555555}
+}
+
+
+#menu{
+    position: relative;
+    font-size: 120%;
+    list-style-type: none;   
+}
+
+#menu li{
+    float: right;
+    margin-right: 25px; 
+    margin-top: 25px;  
+}
+
+#menu li a{
+    text-decoration: none;
+    font-family: waltDisney;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    transition: all 1.5s;      
+}
+
+#menu li a:hover{
+    color: rgb(255, 145, 0);
+}
+
+/* ------------------------------------------------------------
+#hs::after{   
+    content: '';
+    position: relative;
+    display: block;  
+    width: 0;
+    height: 2px;
+    background: rgb(255, 145, 0);
+    transition: .5s;
+}
+
+#hs:hover::after{    
+    width: 100%;
+    transition: width .5s;
+}
+
+
+#hg::after{   
+    content: '';
+    position: relative;
+    display: block;  
+    width: 0;
+    height: 2px;
+    background: rgb(255, 145, 0);
+    transition: .5s;
+}
+
+#hg:hover::after{    
+    width: 100%;
+    transition: width .5s;
+}
+
+
+#hh::after{   
+    content: '';
+    position: relative;
+    display: block;  
+    width: 0;
+    height: 2px;
+    background: rgb(255, 145, 0);
+    transition: .5s; 
+}
+
+#hh:hover::after{    
+    width: 100%;
+    transition: width .5s;
+}
+-------------------------------------------------*/
+
+
+#logo, #hs #hg #hh{
+    line-height: 75px;
+}
+/* ----------------------           home/gallery/sign in buttons          ---------------- */
+
+/* ----------------------           POP UP options          ---------------- */
+#popup{
+    margin-top: 60px;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+#popup h1{
+    font-family: mandalore;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-size: 250%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#popup h3{
+    font-family: waltDisney;
+}
+
+#popup p{
+    font-size: 80%;
+    font-weight: bold;
+}
+
+#left{
+    padding-top: 30px;
+    width: 33%;
+    height: 500px;
+    float: left;
+}
+
+
+.left-styling{
+    background-image: url(/assets/img/main-left.jpeg);
+    opacity: 40%;
+    width: 75%;
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-right: 5%;
+    clear: both;
+    height: 100%;
+    border-radius: 10px
+}
+
+#left:hover{
+    transform: scale(1.2);
+    z-index: 2;
+    opacity: 100%;
+}
+
+#right{
+    padding-top: 30px;
+    width: 33%;
+    height: 200px;
+    float: right;
+    background-color: rgb(0, 0, 0, 0.3); 
+} 
+    
+#center{
+    padding-top: 30px;
+    width: 33%;
+    height: 200px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+
+
+/* ----------------------           POP UP options          ---------------- */
+
+/* ----------------------           animation = This is the way          ---------------- */
+#left, .left-styling{
+    animation-name: this-is-the-way;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    background-color: rgba(0, 0, 0, 0);
+    
+} 
+
+@keyframes this-is-the-way{
+    0%   {background-color:red; left:0px; top:0px;}
+    100%    {background-image: url(/assets/img/info.jpeg);}
+}  
+
+#center{
+    animation-name: this-is-the-way;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    color: rgba(0,0,0,0);
+} 
+
+@keyframes this-is-the-way{
+  100%   {color: #ff0000}  
+}
+
+#right{
+    animation-name: this-is-the-way;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    color: rgba(0,0,0,0);
+} 
+
+@keyframes this-is-the-way{
+  100%   {color: #ff0000}  
+}
+/* ----------------------           animation = This is the way         ---------------- */
+
+/*
+div {
+  font-size: 100px;
+  margin-left: 200px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  color: rgba(0,0,0,0)
+}
+@keyframes example {
+  0%   {left:0px; top:0px; color: rgba(0,0,0,0)}
+  100%  {left:-200px; top:0px; color: red}
+}
+
+*/
+/* -------------------------------               section 3 quick-pick's              ------------------------------- */
+#quick-pick{
+    background-image: url(/assets/img/background-cian2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 200px;
+    height: 330px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#quick-pick div{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 18.5%;
+    height: 100%;
+    float: left;
+    margin: 4px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 80px 0 0 20px;
+}
+
+#quick-pick div hr{
+    background-color: none;
+    height: 10px;
+    width: 50%;
+}
+
+#quick-pick div h5{
+    font-size: 120%;
+    font-family: waltDisney;
+    font-weight: lighter;
+}
+
+#quick-pick div p{
+    font-size: 100%;
+}
+
+#quick-pick div{
+    color: #ffffff;
+    transition: all 1.5s;
+}
+
+#quick-pick div:hover{
+    color: rgb(255, 145, 0);
+    background-color: rgb(128, 128, 128, 0.2);
+}
+/* -------------------------------               section 3 quick-pick's              ------------------------------- */
+
+/* -------------------------------               footer              ------------------------------- */
+footer{
+    height: 140px;
+}
+
+.social-networks{
+    text-align: center;
+}
+.social-networks li{
+    display: inline;
+}
+.social-networks i{
+    font-size: 150%;
+    margin: 2;
+    padding: 3%;
+    color: #555555;
+    transition: 1.5s;
+}
+
+.social-networks i:hover{
+    color: rgb(255, 145, 0);
+}
+/* -------------------------------               footer              ------------------------------- */
+
+/* -------------------------------               gallery styling              ------------------------------- */
+#photo{
+    clear: both;
+    line-height: normal;
+    column-count: 4;
+    column-gap: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 40px;    
+}
+
+#photo img{
+    width: 100%;
+    transition: 1.5s;
+}
+
+#photo img:hover{
+    transform: scale(1.2);
+    z-index: 2;
+    padding: 6px;
+    background-color: rgb(255, 145, 0);
+}
+/* -------------------------------               gallery styling              ------------------------------- */
+
+/* -------------------------------               sign in styling              ------------------------------- */
+#sig-up{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+
+.sign-up{
+    width: 1280px;
+    height: 670px;
+    
+    text-align: center;
+    background-image: url("https://i0.wp.com/www.fr24news.com/a2/wp-content/uploads/2020/11/star-wars-the-mandalorian-baby-yoda-eats-eggs-1244083-1280x0.jpeg?fit=1280%2C670&ssl=1");
+    border-radius: 15px;
+    top: 50%;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.sign-up h1{
+    font-family: waltDisney,sans-serif;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    font-size: 200%;
+    color: white;
+    padding: 30px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.sign-up input{
+    text-align: center;
+    color: white;
+    width: 80%;
+    height: 44px;
+    font-family: Lato, sans-serif;
+}
+
+.txtb{
+    margin: 20px 0;
+    background: rgb(128, 128, 128, 0.2);
+    border-radius: 5px;
+}
+
+.txtb:hover{
+    background: rgba(255, 123, 0, 0.2);
+}
+
+.signup-btn{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: waltDisney,sans-serif;
+    font-weight: 500;
+    font-size: 105%;
+    border-radius: 10px;
+}
+
+.signup-btn:hover{
+    color: rgba(255, 255, 255,);
+    background-color: rgb(255, 145, 0, .5);
+}
+
+.sign-up a{
+    font-family: waltDisney,sans-serif;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+    transition: 1s;
+}
+
+.sign-up a:hover{
+    color: rgb(255, 145, 0, 0.1);
+    text-shadow: #FC0 1px 0 10px;
+}
+/* -------------------------------               sign in styling              ------------------------------- */
