@@ -1,6 +1,6 @@
 # **The Mandalorian**
 
-#### The Mandalorian series done by *Jon Favreau*, used in a way that fits the Project Example Idea 1, as a on of three options we have in Milestone Project 1. 
+#### The Mandalorian series done by *Jon Favreau*, used in a way that fits the Project Example Idea 1, as a on of three options that we have in Milestone Project 1. 
 #### Is extension of well known trilogy *Star Wars* done by George Lucas, Mandalore series it only one part of the SW trilogy distributed by Disney.
 
 ### _**We all know how strong force can be, why not explore it a bit deeper on a pure html css website!**_
@@ -24,17 +24,23 @@
 #### General structure of Mandalore website conteins all parts needed for successful site starting with the:
      
 #### My main two *wireframes* as a base form where did i start:
-1. HTML/CSS Project [Love Running](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+CF101+2017_T1/courseware/1f0ccaac7a3e43d895c1beae5363f46c/8b3e9adaef764e1d962a85668c799cdd/?activate_block_id=block-v1%3ACodeInstitute%2BCF101%2B2017_T1%2Btype%40sequential%2Bblock%408b3e9adaef764e1d962a85668c799cdd) for html & css structure
+1. HTML/CSS Project [Love Running](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+CF101+2017_T1/courseware/1f0ccaac7a3e43d895c1beae5363f46c/8b3e9adaef764e1d962a85668c799cdd/?activate_block_id=block-v1%3ACodeInstitute%2BCF101%2B2017_T1%2Btype%40sequential%2Bblock%408b3e9adaef764e1d962a85668c799cdd) im using it as example: for html & css structure
 2. Readme file as a blueprint taken from [NielMc github](https://github.com/Code-Institute-Solutions/readme-template)
 
 #### Fonts 
    1. Lato = [Google Fonts Library](https://fonts.google.com/) as general
-   2. Mandalore = [Picture and Magic](https://www.picturethemagic.com/?s=mandalore) as maine title
-   3. WaltDisney = [Picture and Magic](https://www.picturethemagic.com/free-disney-fonts/) as related to
+   2. Montserrat = [Google Fonts Library](https://fonts.google.com/)
+   3. Mandalore = [Picture and Magic](https://www.picturethemagic.com/?s=mandalore) as maine title
+   4. WaltDisney = [Picture and Magic](https://www.picturethemagic.com/free-disney-fonts/) as related to
+    
 #### Video   
 * Video in background = [The Mandalorian | Season 2 Official Trailer](https://www.youtube.com/watch?v=eW7Twd85m2g&t=12s)
 #### img 
 * All images and are links in the Technologies Used; section below
+
+#### - One of my own goals as well was to try and keep structural integrity as much as a can, and try to squeeze braking points on minimum.
+* more about that in details under Testing part  
+#### Since as a Designer, i'm trying to provide all around functional structure, and form that will be able follow it and carry its visual signature through all screen sizes
 ---
 ## **Features**
 ---
@@ -73,7 +79,11 @@
 * **I was trying so hard to push my main idea into realization** by having short delay of icons(main title/home,gallery,sign in buttons, etc) that will follow the beats from video in background on loope, and be able to pefomr hover effect after the delay effect is done, plus having a options thet will indicate by different color the page you are currently on
     * due to I wasted entire week trying to make that one part to work by trying from all different angels and not have success, it forces me to take simpler approach 
     
-* among other staff, goal was to make all pages not just blank page, but i don't have enough time to create them all
+* among other staff, goal was to make all pages not just blank page "work in progres..", but i don't have enough time to create them all
+* but idea again was simple:
+  1. for How it Made.html goal was to make playable video intro of latest footag of mp4. format and it will take 70-80% of width and 40-60% max of hight as main attraction-so to say
+     * under that will go all less intrested links and stories on evrything how did developers on set decided to film this series
+  2. Info and Sell department, for them i was having something simple in mind = like simple list of hrfef's that leads to stores/history pages   
 * and there is another issue or small mistake that i will not have time to settle, and that is in "Gallery" page: on hover all img that are near to borders are being cut off after animated part is done? I'm not sure what is causing that effect!
 
 ---
@@ -133,6 +143,12 @@ Video in background = [The Mandalorian | Season 2 Official Trailer](https://www.
 ## **Testing**
 ---
 
+#### *Responsive Elements*
+
+##### First brakpoint at: @media screen and (max-width: 1016px) = quick pick section of 5 consecutive options, they are first one witch brakes structural visual integrity of a site!
+   * Since my goal was to keep structural integrity of visual identity through all screen sizes
+##### Second brakepoint and last one for my form was on (max-width: 552px) when my right side of menus are colliding with left side causing unpleasant visual disturbance.
+   * And since that width it so close to phone size from that point on, I decided to translates it all smartphone sizes, since it only small gap of width: 100px max
 #### In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 #### Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 #### For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
