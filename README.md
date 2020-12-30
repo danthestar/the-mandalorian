@@ -58,8 +58,8 @@
        2. **Sell** - dection wher users can buy everything related to the Mando brand
            * Disney official trading site of [Mandalorian Artwork](https://disneyartonmain.com/collections/mandalorian-artwork)
            * And many others...
-       3. **How it made** ...i will just make blank page    
-
+       3. **How it made** - part where are link's with technology that producers are using in filming the majority of mandalore scenes  
+           * but because of lack of time on project i will leave just blank page
 5. **Middle bottom section another row of 5 href's that are more specified options:**
     1. **Maine page** = of general Disney chanel which includes [Mandalore](https://www.disneyplus.com/en-ie/welcome/the-mandalorian?cid=DSS-Search-Google-71700000064567604-&s_kwcid=AL!8468!3!472720924508!e!!g!!mandalorian&&cid=DSS-Search-Google-71700000064567604-&s_kwcid=AL!8468!3!472720924508!e!!g!!mandalorian&gclid=Cj0KCQiAoab_BRCxARIsANMx4S41MNTbtCbFodqLqq4EAnovAYlL-rCR4U3Uz4WfgSJfOGiAJ8TM-tMaAmgeEALw_wcB&gclsrc=aw.ds) as well
     2. **IMDB** = page as useful links to all general information about series in general for the [seventh art](https://www.imdb.com/title/tt8111088/)
@@ -69,6 +69,7 @@
     5. **Season 3** = everything related to new season release of [Mandalorian series](https://screenrant.com/mandalorian-season-3-future-story-no-baby-yoda/)
 
 ### *Features Left to Implement*
+---
 * **I was trying so hard to push my main idea into realization** by having short delay of icons(main title/home,gallery,sign in buttons, etc) that will follow the beats from video in background on loope, and be able to pefomr hover effect after the delay effect is done, plus having a options thet will indicate by different color the page you are currently on
     * due to I wasted entire week trying to make that one part to work by trying from all different angels and not have success, it forces me to take simpler approach 
     
@@ -215,13 +216,15 @@ Video in background = [The Mandalorian | Season 2 Official Trailer](https://www.
     * **waltDisney:** from [Picture and Magic](https://www.picturethemagic.com/free-disney-fonts/)
 
 ### **Acknowledgements**
+---
 * **Special Thanks to:**
     * my Mentor - **Adegbenga Adeye**.
     * all the **Tutor Assistance** (even tho i didn't use this a smutch)
-    * **HUGE** thanks to all girls and guys in the **[Slack Community](https://slack.com/intl/en-ie/)** for providing constant and quite fast response time for every query!!
+    * **HUGE** thanks to all girls and guys in the **[Slack Community](https://slack.com/intl/en-ie/)** for providing constant and quite fast response time for every my query!!
+        * no matter how stupid that query my be
     * **Student Care** for constant care and providers of usuefull additional information out side of follow lectures
+    * Troubleshooting Tips - it a handy
     * and everyone else who supports me on this Coding journey
 --- 
 
 ### *Daniel Matasic*
-

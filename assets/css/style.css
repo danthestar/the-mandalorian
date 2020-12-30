@@ -21,7 +21,7 @@
 /*-------------------------------------- background loop mp4 -------------------------------------- */
 .video-container{
     position: absolute;
-    top: 0;
+    top: 120px;
     left: 0;
     z-index: -1;
     display: flex;
@@ -32,20 +32,8 @@
     overflow: hidden;
 }
 
-.video-container:after{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color:rgba(0,0,0,0.5);
-}
-
 .video-container video{
     position: absolute;
-    background-position: center;
     top: 50%;   
     left: 50%;
     width: 100vw;
@@ -65,7 +53,7 @@ body{
     width: 100%;
 }
 
-/* ----------------------           Main title           animation           ---------------- */ 
+/* ----------------------           Main title                  ---------------- */ 
 h2{
     font-family: mandalore, sans-serif;
     letter-spacing: 1px;    
@@ -86,7 +74,7 @@ p{
 }
 
 #the{
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     max-width: 100%;    
@@ -94,21 +82,9 @@ p{
     text-align: center;
     margin-bottom: -48px;
     font-size: 20%;
+    position: relative;
 }
 
-#the, #logo{
-    animation-name: the;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    color: rgba(0,0,0,0);
-} 
-@keyframes the{
-  0%   {left:0px; top:0px; color: rgba(0,0,0,0)}
-  100%  {left:0px; top:0px; color: #555555;}
-}
-
-/* ----------------------           befor-after animation           ---------------- */
 #the:before{
     content: "";
     display: block;
@@ -131,280 +107,216 @@ p{
     top: 53.5%;
 }
 
-#the:before, #the:after{
-    animation-name: bf;
-    animation-duration: 1.5s;
-    animation-delay: -.3s;
-    animation-fill-mode: backwards;
-    color: rgba(0, 0, 0, 0);
-    
-} 
-@keyframes bf{
-    100%  {left:0px; top:0px; color: rgba(0, 0, 0, 1)}
-    0%  {left:0px; top:0px; color: rgb(0, 0, 0, 1)}
-}
-/* ----------------------           befor-after animation           ---------------- */
-/* ----------------------           Main title           animation           ---------------- */ 
+/* ----------------------           Main title                ---------------- */ 
 
 /* ----------------------           home/gallery/sign in buttons           ---------------- */
-#menu #hh{
-    animation-name: hh;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    color: rgba(0,0,0,0);
-} 
-@keyframes hh{
-  0%   {left:0px; top:0px; color: rgba(0,0,0,0)}
-  100%  {left:0px; top:0px; color: #555555;}
-}
-
-#menu #hg{
-    animation-name: hg;
-    animation-duration: 2s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-    color: rgba(0,0,0,0);
-}
-@keyframes hg{
-  0%   {left:0px; top:0px; color: rgba(0,0,0,0)}
-  100%  {left:0px; top:0px; color: #555555}
-}
-
-#menu #hs{
-    animation-name: hs;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    color: rgba(0,0,0,0);
-}
-@keyframes hs{
-  0%   {left:0px; top:0px; color: rgba(0,0,0,0)}
-  100%  {left:0px; top:0px; color: #555555}
-}
-
-
 #menu{
-    position: relative;
     font-size: 120%;
-    list-style-type: none;   
+    list-style-type: none; 
+    color: inherit;  
 }
 
 #menu li{
     float: right;
-    margin-right: 25px; 
-    margin-top: 25px;  
+    margin-right: 25px;   
+}
+
+#logo, #menu{
+    line-height: 75px;
 }
 
 #menu li a{
+    font-family: waltDisney, sans-serif;
     text-decoration: none;
-    font-family: waltDisney;
     letter-spacing: 3px;
-    font-weight: lighter;
-    transition: all 1.5s;      
+    font-weight: lighter;      
 }
 
 #menu li a:hover{
     color: rgb(255, 145, 0);
 }
 
-/* ------------------------------------------------------------
-#hs::after{   
-    content: '';
-    position: relative;
-    display: block;  
-    width: 0;
-    height: 2px;
-    background: rgb(255, 145, 0);
-    transition: .5s;
-}
-
-#hs:hover::after{    
-    width: 100%;
-    transition: width .5s;
-}
-
-
-#hg::after{   
-    content: '';
-    position: relative;
-    display: block;  
-    width: 0;
-    height: 2px;
-    background: rgb(255, 145, 0);
-    transition: .5s;
-}
-
-#hg:hover::after{    
-    width: 100%;
-    transition: width .5s;
-}
-
-
-#hh::after{   
-    content: '';
-    position: relative;
-    display: block;  
-    width: 0;
-    height: 2px;
-    background: rgb(255, 145, 0);
-    transition: .5s; 
-}
-
-#hh:hover::after{    
-    width: 100%;
-    transition: width .5s;
-}
--------------------------------------------------*/
-
-
-#logo, #hs #hg #hh{
-    line-height: 75px;
+.active{
+    color: rgb(255, 145, 0);
 }
 /* ----------------------           home/gallery/sign in buttons          ---------------- */
 
-/* ----------------------           POP UP options          ---------------- */
+/* -------------------------------------------          POP UP 3 options          ------------------------------------------- */
 #popup{
     margin-top: 60px;
     height: 600px;
     width: 100%;
     text-align: center;
 }
-
-#popup h1{
-    font-family: mandalore;
-    text-transform: capitalize;
-    letter-spacing: 3px;
-    font-size: 250%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#popup h3{
-    font-family: waltDisney;
-}
-
-#popup p{
-    font-size: 80%;
-    font-weight: bold;
-}
-
+/* --------------------------------          POP UP "left"          -------------------------------- */
 #left{
     padding-top: 30px;
     width: 33%;
-    height: 500px;
     float: left;
 }
 
-
-.left-styling{
-    background-image: url(/assets/img/main-left.jpeg);
-    opacity: 40%;
+#left-container{
     width: 75%;
-    margin-top: 30px;
-    margin-left: 25%;
-    margin-right: 5%;
-    clear: both;
-    height: 100%;
-    border-radius: 10px
+    height: 480px;
+    padding: 30px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 4px;
+    border-radius: 20px;
+    margin: 0 auto;
 }
 
-#left:hover{
+#left-container-lc {
+    background: url(/assets/img/main-left.jpeg) no-repeat center center;
+    height: 100%;
+    opacity: 0%;
+    border-radius: 20px;
+    transition: 1s;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+}
+
+#left-container-lc:hover{
+    transform: scale(1.22);
+    z-index: 2;
+    opacity: 95%;
+    border-color: rgb(255, 255, 255);
+}
+
+#left-container-lc p{
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-left: 20%;
+    padding-right: 20%;
+}
+/* --------------------------------          POP UP "left"          -------------------------------- */
+
+/* --------------------------------          POP UP "right"          -------------------------------- */
+#right{
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+}
+
+#right-container{
+    width: 75%;
+    height: 480px;
+    padding: 30px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0);
+    border-width: 4px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+#right-container-rc{
+    background: url(/assets/img/sell2.jpg) no-repeat center center;
+    height: 100%;
+    opacity: 0%;
+    border-radius: 20px;
+    transition: 1s;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+}
+
+#right-container-rc:hover{
+    transform: scale(1.22);
+    z-index: 2;
+    opacity: 95%;
+    border-color: rgb(255, 255, 255);
+}
+
+#right-container-rc p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-left: 20%;
+    padding-right: 20%;
+}
+/* --------------------------------          POP UP "right"          -------------------------------- */
+
+/* --------------------------------          POP UP "center"          -------------------------------- */
+#center{
+    padding-top: 30px;
+    width: 33%;
+    margin: 0 auto;
+}
+
+#center-container{
+    width: 75%;
+    height: 480px;
+    padding: 30px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 4px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+#center-container-cc {
+    background: url(/assets/img/center.jpg) no-repeat center center;
+    height: 100%;
+    opacity: 0%;
+    border-radius: 20px;
+    transition: 1s;
+    border: 4px solid rgba(255, 255, 255, 0.4)
+}
+
+#center-container-cc:hover{
     transform: scale(1.2);
     z-index: 2;
-    opacity: 100%;
+    opacity: 95%;
+    border-color: rgb(255, 255, 255);
 }
 
-#right{
-    padding-top: 30px;
-    width: 33%;
-    height: 200px;
-    float: right;
-    background-color: rgb(0, 0, 0, 0.3); 
-} 
-    
-#center{
-    padding-top: 30px;
-    width: 33%;
-    height: 200px;
-    margin: 0 auto;
-    background-color: aliceblue;
+#center-container-cc p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-left: 20%;
+    padding-right: 20%;
+}
+/* --------------------------------          POP UP "center"          -------------------------------- */
+
+.zec{
+    margin-top: -350px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-weight: bolder;
+    text-align: center;
+    font-family: waltDisney, sans-serif;
+    letter-spacing: 4px;
+    font-weight: lighter;
 }
 
-
-
-/* ----------------------           POP UP options          ---------------- */
-
-/* ----------------------           animation = This is the way          ---------------- */
-#left, .left-styling{
-    animation-name: this-is-the-way;
-    animation-duration: 2s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-    background-color: rgba(0, 0, 0, 0);
-    
-} 
-
-@keyframes this-is-the-way{
-    0%   {background-color:red; left:0px; top:0px;}
-    100%    {background-image: url(/assets/img/info.jpeg);}
-}  
-
-#center{
-    animation-name: this-is-the-way;
-    animation-duration: 2s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
-    color: rgba(0,0,0,0);
-} 
-
-@keyframes this-is-the-way{
-  100%   {color: #ff0000}  
+.rt{
+    text-decoration: none;
 }
 
-#right{
-    animation-name: this-is-the-way;
-    animation-duration: 2s;
-    animation-delay: 5s;
-    animation-fill-mode: forwards;
-    color: rgba(0,0,0,0);
-} 
-
-@keyframes this-is-the-way{
-  100%   {color: #ff0000}  
-}
-/* ----------------------           animation = This is the way         ---------------- */
-
-/*
-div {
-  font-size: 100px;
-  margin-left: 200px;
-  position: relative;
-  animation-name: example;
-  animation-duration: 2s;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
-  color: rgba(0,0,0,0)
-}
-@keyframes example {
-  0%   {left:0px; top:0px; color: rgba(0,0,0,0)}
-  100%  {left:-200px; top:0px; color: red}
+.rt p{
+    padding-top: 20%;
+    font-family: mandalore, sans-serif;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
 
-*/
-/* -------------------------------               section 3 quick-pick's              ------------------------------- */
+.rt hr{
+    padding: 70px;
+}
+/* -------------------------------------------          POP UP 3 options          ------------------------------------------- */
+
+/* -------------------------------               section 5 quick-pick's              ------------------------------- */
 #quick-pick{
     background-image: url(/assets/img/background-cian2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: 200px;
+    margin-top: 10%;
     height: 330px;
     width: 100%;
     overflow: hidden;
 }
 
-#quick-pick div{
+#quick-pick .link{
     background-color: rgba(0, 0, 0, 0.4);
     width: 18.5%;
     height: 100%;
@@ -417,32 +329,36 @@ div {
     padding: 80px 0 0 20px;
 }
 
-#quick-pick div hr{
+#quick-pick .link hr{
     background-color: none;
     height: 10px;
     width: 50%;
 }
 
-#quick-pick div h5{
+#quick-pick .link h5{
     font-size: 120%;
-    font-family: waltDisney;
+    font-family: waltDisney, sans-serif;
     font-weight: lighter;
 }
 
-#quick-pick div p{
+#quick-pick .link p{
     font-size: 100%;
 }
 
-#quick-pick div{
+.link{
+    text-decoration: none;
+}
+
+#quick-pick .link{
     color: #ffffff;
     transition: all 1.5s;
 }
 
-#quick-pick div:hover{
+#quick-pick .link:hover{
     color: rgb(255, 145, 0);
     background-color: rgb(128, 128, 128, 0.2);
 }
-/* -------------------------------               section 3 quick-pick's              ------------------------------- */
+/* -------------------------------               section 5 quick-pick's              ------------------------------- */
 
 /* -------------------------------               footer              ------------------------------- */
 footer{
@@ -572,3 +488,12 @@ footer{
     text-shadow: #FC0 1px 0 10px;
 }
 /* -------------------------------               sign in styling              ------------------------------- */
+
+/* ------------------------------------  unfinishe dpages    ---------------------------------------*/
+
+#work{
+    padding: 15%;
+    text-align: center;
+}
+
+/* ------------------------------------  unfinishe dpages    ---------------------------------------*/
