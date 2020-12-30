@@ -443,33 +443,42 @@ footer{
     text-align: center;
     color: white;
     width: 80%;
-    height: 44px;
+    height: 40px;
     font-family: Lato, sans-serif;
 }
 
 .txtb{
     margin: 20px 0;
-    background: rgb(128, 128, 128, 0.2);
+    background: rgb(255, 255, 255);
     border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 4px;
 }
 
 .txtb:hover{
-    background: rgba(255, 123, 0, 0.2);
+    background: rgb(255, 145, 0, 1);
+}
+
+.sign-up #one input{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.sign-up #two input{
+    height: 50px;
+    font-size: 33px;
 }
 
 .signup-btn{
     margin-top: 40px;
     margin-bottom: 50px;
     background: rgba(255, 255, 255, 0.5);
-    font-family: waltDisney,sans-serif;
-    font-weight: 500;
-    font-size: 105%;
     border-radius: 10px;
 }
 
 .signup-btn:hover{
     color: rgba(255, 255, 255,);
-    background-color: rgb(255, 145, 0, .5);
+    background-color: rgb(255, 145, 0, 1);
 }
 
 .sign-up a{
@@ -477,13 +486,13 @@ footer{
     letter-spacing: 4px;
     text-transform: capitalize;
     text-decoration: none;
-    color: white;
-    font-size: 200%;
+    color: rgb(255, 255, 255);
+    font-size: 270%;
     transition: 1s;
 }
 
 .sign-up a:hover{
-    color: rgb(255, 145, 0, 0.1);
+    color: rgb(255, 145, 0, 1);
     text-shadow: #FC0 1px 0 10px;
 }
 /* -------------------------------               sign in styling              ------------------------------- */
@@ -499,6 +508,12 @@ footer{
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
+    #photo{
+        width: 100%;
+        column-count: 3;
+    }
+
 }
 
 @media screen and (max-width: 552px){
@@ -525,6 +540,20 @@ footer{
         display: none;
 
     }
+
+    #photo{
+        width: 100%;
+        column-count: 2;
+        margin-top: 40px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .sign-up{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
 
     .video-container{
         margin-top: 20px;
