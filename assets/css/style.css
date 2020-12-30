@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 @font-face{
-    src: url(/assets/font/mandalore.ttf);    
+    src: url(../font/mandalore.ttf);    
     font-family: mandalore;
 }
 
 @font-face{
-    src: url(/assets/font/waltograph42.otf);
+    src: url(../font/waltograph42.otf);
     font-family: waltDisney;
 }
 
@@ -167,7 +167,7 @@ p{
 }
 
 #left-container-lc {
-    background: url(/assets/img/main-left.jpeg) no-repeat center center;
+    background: url(../img/main-left.jpeg) no-repeat center center;
     height: 100%;
     opacity: 0%;
     border-radius: 20px;
@@ -210,7 +210,7 @@ p{
 }
 
 #right-container-rc{
-    background: url(/assets/img/sell2.jpg) no-repeat center center;
+    background: url(../img/sell2.jpg) no-repeat center center;
     height: 100%;
     opacity: 0%;
     border-radius: 20px;
@@ -252,7 +252,7 @@ p{
 }
 
 #center-container-cc {
-    background: url(/assets/img/center.jpg) no-repeat center center;
+    background: url(../img/center.jpg) no-repeat center center;
     height: 100%;
     opacity: 0%;
     border-radius: 20px;
@@ -306,7 +306,7 @@ p{
 
 /* -------------------------------               section 5 quick-pick's              ------------------------------- */
 #quick-pick{
-    background-image: url(/assets/img/background-cian2.jpg);
+    background-image: url(../img/background-cian2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -401,7 +401,7 @@ footer{
 
 #photo img:hover{
     transform: scale(1.2);
-    z-index: 2;
+    z-index: 10;
     padding: 6px;
     background-color: rgb(255, 145, 0);
 }
