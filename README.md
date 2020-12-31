@@ -312,7 +312,7 @@ I had to do couple of changes to improve performance. Screenshots are presented 
 ---
 The project was deployed on GitHub Pages. I used Gitpod as a development environment where I commited all changes to github. I used push command in Gitpod to save changes into GitHub.
 
-          Your site is published at https://danthestar.github.io/the-mandalorian/
+* ###   Your site is published at https://danthestar.github.io/the-mandalorian/
 ---
 ---
 ## **Credits**
