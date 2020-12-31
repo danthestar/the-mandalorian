@@ -111,7 +111,7 @@ p{
 
 /* ----------------------           home/gallery/sign in buttons           ---------------- */
 #menu{
-    font-size: 120%;
+    font-size: 119%;
     list-style-type: none; 
     color: inherit;  
 }
@@ -433,7 +433,7 @@ footer{
     letter-spacing: 5px;
     font-weight: lighter;
     font-size: 200%;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 30px;
     margin-top: 5%;
     text-align: center;
@@ -441,7 +441,7 @@ footer{
 
 .sign-up input{
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 80%;
     height: 40px;
     font-family: Lato, sans-serif;
